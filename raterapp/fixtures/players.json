@@ -1,0 +1,10 @@
+[
+    {
+        "model": "raterapp.player",
+        "pk": 1,
+        "fields": {
+            "bio": "Me",
+            "user": 1
+        }
+    }
+]

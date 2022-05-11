@@ -1,0 +1,30 @@
+[
+    {
+        "model": "raterapp.game",
+        "pk": 1,
+        "fields": {
+            "title": "Super Mario",
+            "description": "Italian Plumber saves princess",
+            "designer": "Bob the Builder",
+            "year_released": "1998-04-22",
+            "number_of_players": 2,
+            "estimated_time_to_play": "2001-03-22",
+            "age_recommendation": 13,
+            "player_id":1
+        }
+    },
+    {
+        "model": "raterapp.game",
+        "pk": 2,
+        "fields": {
+            "title": "Lego Star Wars",
+            "description": "Star Wars but Legos",
+            "designer": "Luigi",
+            "year_released": "1996-04-22",
+            "number_of_players": 2,
+            "estimated_time_to_play": "2011-03-22",
+            "age_recommendation": 13,
+            "player_id":1
+        }
+    }
+]

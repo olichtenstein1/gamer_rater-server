@@ -5,6 +5,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
+from raterapp.models import Player
+
 # fix this when I make model representing user
 # from levelupapi.models import Gamer
 
@@ -54,14 +56,14 @@ def register_user(request):
         last_name=request.data['last_name']
     )
 
-    # Now save the extra info in the levelupapi_gamer table
-    gamer = Gamer.objects.create(
+    # Now save the extra info in the _gamer table
+    player = Player.objects.create(
         bio=request.data['bio'],
         user=new_user
     )
 
     # Use the REST Framework's token generator on the new user account
-    token = Token.objects.create(user=gamer.user)
+    token = Token.objects.create(user=player.user)
     # Return the token to the client
     data = { 'token': token.key }
     return Response(data)

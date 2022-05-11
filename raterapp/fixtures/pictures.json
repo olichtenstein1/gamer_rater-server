@@ -1,0 +1,20 @@
+[
+    {
+        "model": "raterapp.picture",
+        "pk": 1,
+        "fields": {
+            "image": "https://preview.redd.it/mfzq1kzjwhv51.png?auto=webp&s=547c5f1bc8c9d10439324b930f040eeda95a6813",
+            "player_id": 1,
+            "game_id":1
+        }
+    },
+    {
+        "model": "raterapp.picture",
+        "pk": 2,
+        "fields": {
+            "image": "https://images.unsplash.com/photo-1621611141464-a06af0c5c623?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGVnbyUyMHN0YXIlMjB3YXJzfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+            "player_id": 1,
+            "game_id":2
+        }
+    }
+]

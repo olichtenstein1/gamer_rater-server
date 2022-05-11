@@ -1,0 +1,20 @@
+[
+    {
+        "model": "raterapp.rating",
+        "pk": 1,
+        "fields": {
+            "rating": 7,
+            "player_id": 1,
+            "game_id":1
+        }
+    },
+    {
+        "model": "raterapp.rating",
+        "pk": 2,
+        "fields": {
+            "rating": 10,
+            "player_id": 1,
+            "game_id":2
+        }
+    }
+]

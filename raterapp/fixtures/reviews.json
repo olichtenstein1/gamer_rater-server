@@ -1,0 +1,20 @@
+[
+    {
+        "model": "raterapp.review",
+        "pk": 1,
+        "fields": {
+            "description": "This game was average.",
+            "player_id": 1,
+            "game_id":1
+        }
+    },
+    {
+        "model": "raterapp.review",
+        "pk": 2,
+        "fields": {
+            "description": "Best game ever!",
+            "player_id": 1,
+            "game_id":2
+        }
+    }
+]
