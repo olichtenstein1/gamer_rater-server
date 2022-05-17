@@ -19,16 +19,23 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
 from raterapp.views import GameView, register_user, login_user
+from raterapp.views.category import CategoryView
+from raterapp.views.gamerating import RatingView
+from raterapp.views.gamereview import ReviewView
+
 
 
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'games', GameView, 'game')
-
+router.register(r'categories', CategoryView, 'category')
+router.register(r'reviews', ReviewView, 'review')
+router.register(r'ratings', RatingView, 'rating')
 
 urlpatterns = [
     path('register', register_user),
     path('login', login_user),
     path('admin/', admin.site.urls),
+    # ? line 40
     path('', include(router.urls)),
 ]
